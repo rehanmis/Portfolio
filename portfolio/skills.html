@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website - Skills</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="contact.html">Get In Touch</a>
+        </div>
+        <a href="./IT interns (2).pdf" class="download-cv">Download CV</a>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-content">
+            <h3 class="skills-subtitle">My skills</h3>
+            <h2 class="skills-title">Why Hire Me For<br>Your Next Project ?</h2>
+            <p class="skills-description">
+                I am a web developer and UI/UX Designer and I have been working in this field for last 2 years. and more on ....
+            </p>
+            <a href="./contact.html" class="hire-button">Hire me →</a>
+        </div>
+        <div class="skills-images">
+            <img src="./download (1).jpeg" alt="Web Development" class="skill-image web-dev-image">
+            <img src="./download (2).jpeg" alt="UI/UX Design" class="skill-image ux-design-image">
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

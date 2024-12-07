@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="contact.html">Get In Touch</a>
+        </div>
+        <a href="./IT interns (2).pdf" class="download-cv">Download CV</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="left-section">
+            <h1>Manoj Mishra</h1>
+            <p>I am a web developer and UI/UX Designer and I have been working in this field for last 2 years</p>
+            <a href="#contact" class="cta-button">Let's get started →</a>
+        </div>
+        <div class="right-section">
+            <img src="./best pic.JPG" alt="Profile" class="profile-image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Email: rehanmishra586@gmail.com</p>
+                <p>Phone: +977-9863223747</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Kathmandu, Nepal</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Manoj Mishra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

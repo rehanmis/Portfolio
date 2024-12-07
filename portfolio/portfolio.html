@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="contact.html">Get In Touch</a>
+        </div>
+        <a href="./IT interns (2).pdf" class="download-cv">Download CV</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+            <h2>Portfolio</h2>
+            <h1>My Creative Work Latest Project</h1>
+            <p>I am a web developer and UI/UX designer and I have been working in this field for the last 2 years</p>
+            
+            <!-- Portfolio Images Grid -->
+            <div class="portfolio-gallery">
+                <div class="portfolio-image img1"></div> <!-- Image 1 -->
+                <div class="portfolio-image img2"></div> <!-- Image 2 -->
+                <div class="portfolio-image img3"></div> <!-- Image 3 -->
+                <div class="portfolio-image img4"></div> <!-- Image 4 -->
+            </div>
+        </div>
+    
+        <!-- Specialization Section -->
+        <div class="specialization-section">
+            <h2>My Specialization</h2>
+            <div class="specialization-container">
+                <div class="specialization-item">
+                    <i class="uil uil-megaphone"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Marketing campaigns and strategies</p>
+                </div>
+                <div class="specialization-item">
+                    <i class="uil uil-text"></i>
+                    <h3>Website Development</h3>
+                    <p>Creating responsive and dynamic websites</p>
+                </div>
+                <div class="specialization-item">
+                    <i class="uil uil-paint-tool"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing engaging user experiences</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
